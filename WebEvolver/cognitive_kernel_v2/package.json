@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "recharts": "^2.12.0"
+  }
+}

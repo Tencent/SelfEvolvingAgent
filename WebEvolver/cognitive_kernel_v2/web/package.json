@@ -1,0 +1,22 @@
+{
+    "name": "playwright-express-app",
+    "version": "1.0.0",
+    "description": "A simple Express server to navigate and interact with web pages using Playwright.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": [
+      "express",
+      "playwright",
+      "automation"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1",
+      "playwright": "^1.28.1",
+      "async-mutex":"^0.2.6"
+    }
+  }
+  

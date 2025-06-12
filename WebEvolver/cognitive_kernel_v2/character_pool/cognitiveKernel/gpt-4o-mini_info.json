@@ -1,0 +1,32 @@
+{
+    "name":"cognitiveKernel",
+    "id":"0",
+    "shown_title":"Cognitive Kernel",
+    "description":"Cognitive Kernel, an intitial autopilot system",
+    "visible_users":[
+        "all"
+    ],
+    "head_system_prompt":"You are Cognitive Kernel",
+    "tail_system_prompt":"You need to print out the key information in the code. If you think that answering this request does not require any external information, directly output ```python\nprint('Direct answering')\n```. If you need to CallWeb, print ```python\nCallWeb(query=your_query, target_url=your_target_url)\n```",
+    "global_db_info":{},
+    "system_prompt_sequence":[
+        {
+            "name":"available_functions",
+            "pre_defined":true,
+            "step_type":"dynamic",
+            "head":"",
+            "content":[
+            ],
+            "CK_status_key":""
+        },
+        {
+            "name":"uploaded_files",
+            "pre_defined":true,
+            "step_type":"dynamic",
+            "head":"",
+            "content":[
+            ],
+            "CK_status_key":"uploaded_files"
+        }
+    ]
+}

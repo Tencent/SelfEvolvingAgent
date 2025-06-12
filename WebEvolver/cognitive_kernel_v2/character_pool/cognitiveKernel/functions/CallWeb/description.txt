@@ -1,0 +1,24 @@
+{
+    "Function_name": "CallWeb",
+    "Description": "This function will call a browser sandbox to interact with the network to get information from the target webpage. Use this function when the user's question requires browsing the web.",
+    "Input": [
+        {
+            "Name": "query",
+            "Description": "The query used to search online. It is usually a direct request.",
+            "Required": true,
+            "Type": "str"
+        },
+        {
+            "Name": "target_url",
+            "Description": "The starting target webpage. If the target webpage is not clear, please use https://www.google.com/",
+            "Required": true,
+            "Type": "str"
+        }
+    ],
+    "Output": [
+        {
+            "Name": "response",
+            "Description": "Information from the webpage",
+        }
+    ],
+}

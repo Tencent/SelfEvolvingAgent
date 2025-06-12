@@ -1,0 +1,5 @@
+{"db_name":"jinyong_novel","db_type":"Sqlite","db_language":"Chinese","db_path":"/data1/Database_v02/jinyong_novel.db","chunk_size":2048,"cache_size":100000,"neighbor_size":10}
+{"db_name":"party_questions","db_type":"Sqlite","db_language":"Chinese","db_path":"/data1/Database_v02/party_questions.db","chunk_size":2048,"cache_size":100000,"neighbor_size":10}
+{"db_name":"medical","db_type":"Sqlite","db_language":"Chinese","db_path":"/data1/Database_v02/medical.db","chunk_size":2048,"cache_size":100000,"neighbor_size":10}
+{"db_name":"BYD","db_type":"Sqlite","db_language":"Chinese","db_path":"/data1/Database_v02/BYD.db","chunk_size":2048,"cache_size":100000,"neighbor_size":10}
+{"db_name":"Youbang","db_type":"Sqlite","db_language":"Chinese","db_path":"/data1/Database_v02/Youbang.db","chunk_size":2048,"cache_size":100000,"neighbor_size":10}

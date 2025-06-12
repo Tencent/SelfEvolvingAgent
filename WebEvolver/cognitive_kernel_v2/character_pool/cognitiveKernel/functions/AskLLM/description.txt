@@ -1,0 +1,19 @@
+{
+    "Function_name": "AskLLM",
+    "Description": "This function will ask the LLM a question and return the response. The maximum length of the query is 2048 characters. The response will be in the string format.",
+    "Input": [
+        {
+            "Name": "query",
+            "Description": "the query in the string format to ask the LLM.",
+            "Required": true,
+            "Type": "str"
+        }
+    ],
+    "Output": [
+        {
+            "Name": "response",
+            "Description": "the response from the LLM."
+            "Type": "str"
+        }
+    ],
+}

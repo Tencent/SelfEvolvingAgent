@@ -1,0 +1,1 @@
+[{"role": "user", "content": "write a song"}, {"role": "assistant", "content": "final_result = AskLLM(query=\"write a song\")"}]

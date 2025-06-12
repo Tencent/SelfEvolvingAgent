@@ -1,0 +1,2 @@
+{"db_name":"BYD","db_type":"Sqlite","db_language":"Chinese","db_path":"/data1/Database_v02/BYD.db","chunk_size":2048,"cache_size":100000,"neighbor_size":10}
+{"db_name":"Youbang","db_type":"Sqlite","db_language":"Chinese","db_path":"/data1/Database_v02/Youbang.db","chunk_size":2048,"cache_size":100000,"neighbor_size":10}

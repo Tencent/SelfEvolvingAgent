@@ -1,0 +1,4 @@
+CREATE DATABASE cognitive_kernel_user;
+CREATE DATABASE cognitive_kernel_history;
+CREATE DATABASE cognitive_kernel_raw_data;
+CREATE DATABASE cognitive_kernel_annotation;

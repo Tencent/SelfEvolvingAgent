@@ -1,0 +1,25 @@
+{
+    "Function_name": "CallMemoryKernel",
+    "Description": "This function will find the most semantically similar content to the query from a database. It can be used for information retrieval and other tasks. Please select the appropriate db_name according to the description of different databases. Please use this function only when the user's question requires the uploaded file or long-term memory.",
+    "Input": [
+        {
+            "Name": "query",
+            "Description": "the query in the string format to ask the LLM.",
+            "Required": true,
+            "Type": "str"
+        },
+        {
+            "Name": "db_name",
+            "Description": "the available databases we should retrieve information from.",
+            "Required": true,
+            "Type": "str"
+        }
+    ],
+    "Output": [
+        {
+            "Name": "response",
+            "Description": "the text data and metadata from the retrieval system.",
+            "Type": "list[tuple]"
+        }
+    ],
+}

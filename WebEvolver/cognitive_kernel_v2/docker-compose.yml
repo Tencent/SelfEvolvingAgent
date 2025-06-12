@@ -1,0 +1,81 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    expose:
+      - "80"
+    environment:
+      - KR_SERVICE_IP_FILE=/app/service_url_config.json
+      - WEB_IP=web:3000
+      - NUM_WORKERS=1
+      - MODEL_NAME=gpt-4o
+      - MAX_STEPS=16
+      - LLAMA_VERSION=3.3
+      - WEBDREAMER_COT=false
+      - SERVICE_IP=xxx.xxx.xxx.xxx:yyyy
+      - WORLD_MODEL_IP=xxx.xxx.xxx.xxx:yyyy
+      - INFERENCE_SERVER_ENGINE=vLLM
+      - OPENAI_API_KEY=XXX
+      - USE_AZURE=True
+      - OPENAI_BASE_URL=XXX
+      - GPT_MODEL=gpt-4o
+      - CRITIC_MODEL=gpt
+      - ACTIVATE_KE=false
+      - ACTIVATE_HISTORY=false
+      - ACTIVATE_SHORT_FEEDBACK=true
+      - HISTORY_SUMMARY_LENGTH=2
+      - MAX_CUSTOMIIZED_CHARACTER=2
+      - POSTGRES_USER=xxxx
+      - POSTGRES_PASSWORD=yyyyyy
+      - DEBUG=True
+    depends_on:
+      - postgres
+      - web
+    volumes:
+      - ./character_pool:/app/Character_pool
+      - ./customized_character_pool:/app/Customized_character_pool
+      - uploaded_files:/app/UploadedFiles
+      - local_dbs:/app/Database_local
+      - ./developer_users.txt:/app/developer_users.txt
+      - ./tree_search_data:/app/tree_search_data
+
+  web:  
+    build:
+      context: ./web  
+      dockerfile: Dockerfile
+    expose:
+      - "3000"
+    environment:
+      - MAX_BROWSERS=16  
+    volumes:
+      - screenshots:/screenshots  
+
+  nginx:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+      - web
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: xxxx
+      POSTGRES_PASSWORD: yyyyyy
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_ck:/var/lib/postgresql/data
+      - ./init_db:/docker-entrypoint-initdb.d  
+    # command: bash -c "envsubst < /docker-entrypoint-initdb.d/create_databases.sql > /docker-entrypoint-initdb.d/init_db.sql && exec docker-entrypoint.sh postgres"
+
+
+volumes:
+  local_dbs:
+  uploaded_files:
+  postgres_data_ck:
+  screenshots:
