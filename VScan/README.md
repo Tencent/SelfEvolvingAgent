@@ -11,7 +11,7 @@ This repository contains the code for our arXiv preprint `VScan: Rethinking Visu
 ## 📢Highlights
 - 💡We conduct *comprehensive analyses* to reveal how visual knowledge evolves *throughout the entire LVLM*, offering insights to inform the design of more effective visual token reduction strategies.
 - 🔥We introduce *VScan*, a two-stage training-free visual token reduction framework that progressively eliminates unimportant visual tokens to reduce both visual redundancy and textual irrelevance.
-- 🚀Extensive evaluations across sixteen benchmarks demonstrate that VScan *consistently outperforms state-of-the-art methods* in maintaining robust performance under constrained token budgets. Notably, when applied to LLaVA-NeXT-7B, VScan achieves a *2.91$\times$ speedup* in prefilling and a *10$\times$ reduction* in FLOPs, while *retaining 95.4\% of the original performance*.
+- 🚀Extensive evaluations across sixteen benchmarks demonstrate that VScan *consistently outperforms state-of-the-art methods* in maintaining robust performance under constrained token budgets. Notably, when applied to LLaVA-NeXT-7B, VScan achieves a *2.91x speedup* in prefilling and a *10x reduction* in FLOPs, while *retaining 95.4\% of the original performance*.
 
 
 ## ⏳Environment and Setup
@@ -20,10 +20,6 @@ We test our codebase with Python 3.10.17, PyTorch 2.1.2, and CUDA 12.1. Please i
 
 You can use the following command to install the required packages:
 ```bash
-# Clone the repo
-git clone https://github.com/zhangce01/VScan.git
-cd PyramidDrop
-
 # Create a conda environment
 conda create -n vscan python=3.10 -y
 conda activate vscan
