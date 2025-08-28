@@ -125,6 +125,10 @@ python evaluation/generate_webvoyager_mind2web_new.py --query_path ../data/webvo
 
 Use the function `auto_eval_by_gpt4o` in `cognitive_kernel_v2/evaluation/eval_webvoyager.py`.
 
+
+## Data
+
+The SFT dataset for the WebEvolver agent policy model and the world model can be found [here](https://huggingface.co/datasets/CognitiveKernel/WebEvolver).
  
 ## 📌 BibTeX & Citation
 
