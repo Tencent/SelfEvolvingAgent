@@ -1,6 +1,8 @@
-# VScan: Rethinking Visual Token Reduction for Efficient Large Vision-Language Models
+# [TMLR 2026] VScan: Rethinking Visual Token Reduction for Efficient Large Vision-Language Models
 
-[![arXiv](https://img.shields.io/badge/arXiv-2505.22654-b31b1b.svg)](https://arxiv.org/abs/2505.22654) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Website](https://img.shields.io/badge/Project-Website-green)](https://zhangce01.github.io/VScan/) [![arXiv](https://img.shields.io/badge/arXiv-2505.22654-b31b1b.svg)](https://arxiv.org/abs/2505.22654) [![Conference](https://img.shields.io/badge/TMLR-2026-blue)]([https://iclr.cc/](https://jmlr.org/tmlr/)) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 
 ## 👀Introduction
 
